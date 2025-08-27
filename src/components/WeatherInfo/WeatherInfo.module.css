@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.spinnerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.weatherInfoDetails {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.weatherInfoLocation {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.weatherInfoC {
+  font-size: 1.5rem;
+}
+
+.weatherInfoCondition {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .weatherInfoC {
+    font-size: 2rem;
+  }
+
+  .weatherInfoCondition {
+    font-size: 1.2rem;
+  }
+
+  .weatherInfoLocation {
+    font-size: 2rem;
+  }
+}
